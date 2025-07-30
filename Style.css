@@ -12,7 +12,7 @@
   color: rgb(0, 0, 0);
   text-align: center;
   padding: 0px 16px;
-  margin: 0 1500px 0 0;
+  margin: 0 1200px 0 0;
   text-decoration: none;
 }
 
@@ -35,8 +35,56 @@ h1 {
   font-family: "inter";
   font-size: 26px;
   color: rgb(0, 0, 0);
+  margin: 133px 0 8px 0;
+  text-align: center;
+}
+
+h3 {
+  font-family: "inter";
+  font-size: 22px;
+  color: #000000;
+  text-align: center;
+}
+
+h4 {
+  font-family: "inter";
+  font-size: 22px;
+  color: #152536;
 }
 
 .barra-contato {
 margin-left: auto;
+}
+
+.contato-descricao {
+  font-family: "inter";
+  font-size: 24px;
+  color: #6C757D;
+}
+
+.card-link {
+  font-family: "inter";
+  font-size: 18px;
+  color: #7749F8;
+  text-decoration: none;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+  color: #7749F8;
+}
+
+.card {
+  margin: 20px 67px 0 0;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-family: "inter";
+  font-weight: bold;
+  font-size: 24px;
+  color: #152536;
 }
