@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .barra {
   background-color: #ffffff;
   overflow: hidden;
@@ -5,30 +11,42 @@
   font-size: 22px;
   display: flex;
   align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 61px;
+  padding: 0 20px;
+  justify-content: space-between;
+  margin-left: auto;
 }
+
 
 .barra a {
   display: block;
   color: rgb(0, 0, 0);
   text-align: center;
-  padding: 0px 16px;
-  margin: 0 1200px 0 0;
+  padding: 8px 16px;
+  margin: 0;
   text-decoration: none;
+
 }
 
 
 body {
   background-color: #9EC5FE;
-  padding: 20px;
   font-family: "inter";
   font-size: 22px;
-    color: White;
+  color: White;
+  padding-top: 61px;
 }
 
 p {
   font-family: "inter";
   font-size: 22px;
   color: black;
+  text-align: justify;
+  flex-grow: 1;
 }
 
 h1 {
@@ -67,6 +85,9 @@ margin-left: auto;
   font-size: 18px;
   color: #7749F8;
   text-decoration: none;
+  padding-top: 53px;
+  margin-top: auto;
+  align-self: flex-start;
 }
 
 .card-link:hover {
@@ -75,11 +96,13 @@ margin-left: auto;
 }
 
 .card {
-  margin: 20px 67px 0 0;
+  margin: 0;
+  width: 42rem;
   padding: 24px;
   background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
 }
 
 .card-title {
@@ -88,3 +111,32 @@ margin-left: auto;
   font-size: 24px;
   color: #152536;
 }
+
+.cardcontato {
+   width: 42rem;
+   margin: 0;
+   padding: 24px;
+   background-color: #ffffff;
+   border-radius: 12px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   display: flex;
+   flex-direction: column;
+  }
+
+  .ContainerCard {
+    display: flex;
+    gap: 67px;
+    justify-content: center;
+    margin-top: 154px;
+    margin-bottom: 216px;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+
+  .card-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+
+  
