@@ -162,3 +162,10 @@ margin-left: auto;
     padding-top: 10px;
   }
 
+.Busca {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  background-color: #ffffff;
+  margin-left: 221px;
+}
