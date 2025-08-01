@@ -139,4 +139,26 @@ margin-left: auto;
     flex-direction: column;
   }
 
-  
+  .Principal {
+    display: flex;
+    flex-direction: column;
+    background-color: #9EC5FE;
+    margin-top: auto;
+    padding: auto;
+  }
+
+  .titulo {
+    text-align: center;
+    font-family: "inter";
+    font-size: 40px;
+    font-weight: 600;
+
+  }
+
+  .subtitulo {
+    text-align: center;
+    font-family: "inter";
+    font-size: 24px;
+    padding-top: 10px;
+  }
+
