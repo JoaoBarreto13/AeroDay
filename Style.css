@@ -49,6 +49,15 @@ p {
   flex-grow: 1;
 }
 
+.card-text {
+  font-family: "inter";
+  font-size: 22px;
+  color: #6C757D;
+  text-align: justify;
+  flex-grow: 1;
+  padding-top: 12px;
+}
+
 h1 {
   font-family: "inter";
   font-size: 26px;
@@ -72,6 +81,26 @@ h4 {
 
 .barra-contato {
 margin-left: auto;
+transition: all 0.3s ease;
+}
+
+.barra-contato:hover {
+  transform: translateY(-2px);
+}
+
+.barra-contato:active {
+  transform: translateY(0);
+}
+
+.Barra-icone {
+  transition: all 0.3s ease;
+}
+
+.Barra-icone:hover{
+  transform: translateY(-2px);
+}
+.Barra-icone:active {
+  transform: translateY(0);
 }
 
 .contato-descricao {
@@ -164,8 +193,120 @@ margin-left: auto;
 
 .Busca {
   display: flex;
+  border-radius: 19px;
+  align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  margin: 40px auto;
   background-color: #ffffff;
-  margin-left: 221px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 1080px;
+  height: 260px;
+  max-width: 95%;
+}
+
+.Busca-conteudo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) auto;
+  gap: 20px;
+  align-items: end;
+  align-content: center;
+  padding: 24px;
+  width: auto;
+  max-width: 1200px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.buscaparagrafo {
+  font-family: "inter";
+  font-size: 22px;
+  color: #3A3939;
+  text-align: left;
+  margin: 0;
+  font-weight: 500;
+}
+
+input[type="text"] {
+  padding: 12px 16px;
+  font-size: 14px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 14px;
+  font-family: "inter";
+  background-color: #f8f9fa;
+  transition: border-color 0.3s ease ;
+  width: 100%;
+  min-width: 180px;
+}
+
+input[type="text"]:focus {
+  border-color: #1E88E5;
+  outline: none;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(30, 136, 229, 0.1);
+}
+
+input[type="text"]::placeholder {
+  color: #999;
+  font-family: "inter";
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #1E88E5;
+  color: white;
+  cursor: pointer;
+  font-family: "inter";
+  font-weight: 600;
+  height: auto;
+  width: auto;
+  min-width: 140px;
+  box-shadow: 0 4px 6px rgba(30, 136, 229, 0.3);
+  transition: all 0.3s ease;
+  margin-left: 20px;
+}
+
+button:hover {
+  background-color: #1976D2;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(30, 136, 229, 0.4);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+input[type="date"] {
+  padding: 12px 16px;
+  font-size: 14px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 14px;
+  font-family: "inter";
+  background-color: #f8f9fa;
+  transition: border-color 0.3s ease ;
+  width: 100%;
+  min-width: 180px;
+  color: #999;
+}
+
+input[type="date"]:focus {
+  border-color: #1E88E5;
+  outline: none;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(30, 136, 229, 0.1);
+}
+
+input[type="date"]::placeholder {
+  color: #999;
+  font-family: "inter";
 }

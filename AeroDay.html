@@ -9,25 +9,46 @@
   <link rel='stylesheet' href="style.css">
 </head>
 <body>
+
 <nav class="barra">
   <a class="Barra-icone" href="AeroDay.html">
     <img src="icone.svg" alt="Ícone de menu">
   </a>
   <a class="barra-contato" href="Contato.html">Contato</a>
 </nav>
+
 <div class="Principal">
   <div class="Principal-conteudo">
     <h1 class="titulo">Monitor de Voos</h1>
     <h3 class="subtitulo">Encontre as melhores ofertas para a sua proxima viagem.</h3>
   </div>
-</div>
-<div class="Busca">
-  <div class="Busca-conteudo">
-   <p>Origem</p>
-    <input type="text" placeholder="Buscar voos...">
-   <button>Buscar</button>
+
+  <div class="Busca">
+   <div class="Busca-conteudo">
+    <div class="input-group">
+      <p class="buscaparagrafo">Origem</p>
+      <input type="text" placeholder="Ex: São Paulo, ''SP''">
+    </div>
+
+    <!-- esse curto codigo me deu um trabalhão, mas agora está funcionando-->
+    <div class="input-group">
+      <p class="buscaparagrafo">Destino</p>
+      <input type="text" placeholder="Ex: Salvador, ''SSA''">
+    </div>
+    
+    <div class="input-group">
+      <p class="buscaparagrafo">Data de ida</p>
+      <input type="date" placeholder="dd/mm/aaaa">
+    </div>
+    
+    <div class="input-group">
+      <p class="buscaparagrafo">Data de volta</p>
+      <input type="date" placeholder="dd/mm/aaaa">
+    </div>
+    
+    <button type="button">Buscar Voos</button>
   </div>
-</div>
+ </div>
 
 </div>
 </body>
