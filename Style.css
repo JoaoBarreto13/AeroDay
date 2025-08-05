@@ -196,7 +196,7 @@ transition: all 0.3s ease;
   border-radius: 19px;
   align-items: center;
   justify-content: center;
-  margin: 40px auto;
+  margin: 60px auto;
   background-color: #ffffff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 1080px;
@@ -211,14 +211,15 @@ transition: all 0.3s ease;
   align-items: end;
   align-content: center;
   padding: 24px;
-  width: auto;
-  max-width: 1200px;
+  width: 100%;
+  max-width: 100%;
 }
 
 .input-group {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  justify-content: flex-end;
 }
 
 .buscaparagrafo {
@@ -242,6 +243,7 @@ input[type="text"] {
   transition: border-color 0.3s ease ;
   width: 100%;
   min-width: 180px;
+  height: 44px;
 }
 
 input[type="text"]:focus {
@@ -309,4 +311,48 @@ input[type="date"]:focus {
 input[type="date"]::placeholder {
   color: #999;
   font-family: "inter";
+}
+
+@media (max-width: 1200px) {
+  .Busca {
+    width: 95%;                    
+  }
+}
+
+@media (max-width: 768px) {
+  .Busca {
+    width: 95%;
+    height: auto;
+    min-height: 260px;
+  }
+  
+  .Busca-conteudo {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+  
+  button {
+    grid-column: 1 / -1;
+    margin-left: 0;
+    margin-top: 15px;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .Busca {
+    width: 95%;
+    height: auto;
+    margin: 30px auto;
+  }
+  
+  .Busca-conteudo {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 20px;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
 }
