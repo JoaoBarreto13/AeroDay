@@ -7,7 +7,7 @@
 .barra {
   background-color: #ffffff;
   overflow: hidden;
-  font-family: "inter";
+  font-family: "inter", sans-serif;
   font-size: 22px;
   display: flex;
   align-items: center;
@@ -35,14 +35,14 @@
 
 body {
   background-color: #9EC5FE;
-  font-family: "inter";
+  font-family: "inter", sans-serif;
   font-size: 22px;
   color: White;
   padding-top: 61px;
 }
 
 p {
-  font-family: "inter";
+  font-family: "inter", sans-serif;
   font-size: 22px;
   color: black;
   text-align: justify;
@@ -50,7 +50,7 @@ p {
 }
 
 .card-text {
-  font-family: "inter";
+  font-family: "inter", sans-serif;
   font-size: 22px;
   color: #6C757D;
   text-align: justify;
@@ -59,7 +59,7 @@ p {
 }
 
 h1 {
-  font-family: "inter";
+  font-family: "inter", sans-serif;
   font-size: 26px;
   color: rgb(0, 0, 0);
   margin: 133px 0 8px 0;
@@ -67,14 +67,14 @@ h1 {
 }
 
 h3 {
-  font-family: "inter";
+  font-family: "inter", sans-serif;
   font-size: 22px;
   color: #000000;
   text-align: center;
 }
 
 h4 {
-  font-family: "inter";
+  font-family: "inter", sans-serif;
   font-size: 22px;
   color: #152536;
 }
@@ -103,14 +103,20 @@ transition: all 0.3s ease;
   transform: translateY(0);
 }
 
+.Barra-icone img {
+  width: 210px;                      
+  height: 60px;                     
+  object-fit: contain;
+}
+
 .contato-descricao {
-  font-family: "inter";
+  font-family: "inter", sans-serif;
   font-size: 24px;
   color: #6C757D;
 }
 
 .card-link {
-  font-family: "inter";
+  font-family: "inter", sans-serif;
   font-size: 18px;
   color: #7749F8;
   text-decoration: none;
@@ -135,7 +141,7 @@ transition: all 0.3s ease;
 }
 
 .card-title {
-  font-family: "inter";
+  font-family: "inter", sans-serif;
   font-weight: bold;
   font-size: 24px;
   color: #152536;
@@ -178,7 +184,7 @@ transition: all 0.3s ease;
 
   .titulo {
     text-align: center;
-    font-family: "inter";
+    font-family: "inter", sans-serif;
     font-size: 40px;
     font-weight: 600;
 
@@ -186,7 +192,7 @@ transition: all 0.3s ease;
 
   .subtitulo {
     text-align: center;
-    font-family: "inter";
+    font-family: "inter", sans-serif;
     font-size: 24px;
     padding-top: 10px;
   }
@@ -223,7 +229,7 @@ transition: all 0.3s ease;
 }
 
 .buscaparagrafo {
-  font-family: "inter";
+  font-family: "inter", sans-serif;
   font-size: 22px;
   color: #3A3939;
   text-align: left;
@@ -238,7 +244,7 @@ input[type="text"] {
   border-radius: 8px;
   width: 100%;
   font-size: 14px;
-  font-family: "inter";
+  font-family: "inter", sans-serif;
   background-color: #f8f9fa;
   transition: border-color 0.3s ease ;
   width: 100%;
@@ -255,7 +261,7 @@ input[type="text"]:focus {
 
 input[type="text"]::placeholder {
   color: #999;
-  font-family: "inter";
+  font-family: "inter", sans-serif;
 }
 
 button {
@@ -266,7 +272,7 @@ button {
   background-color: #1E88E5;
   color: white;
   cursor: pointer;
-  font-family: "inter";
+  font-family: "inter", sans-serif;
   font-weight: 600;
   height: auto;
   width: auto;
@@ -293,7 +299,7 @@ input[type="date"] {
   border-radius: 8px;
   width: 100%;
   font-size: 14px;
-  font-family: "inter";
+  font-family: "inter", sans-serif;
   background-color: #f8f9fa;
   transition: border-color 0.3s ease ;
   width: 100%;
