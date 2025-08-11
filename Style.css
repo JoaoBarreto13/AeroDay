@@ -19,6 +19,8 @@
   padding: 0 20px;
   justify-content: space-between;
   margin-left: auto;
+  z-index: 9999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -39,6 +41,7 @@ body {
   font-size: 22px;
   color: White;
   padding-top: 61px;
+  min-height: 100vh;
 }
 
 p {
@@ -138,6 +141,8 @@ transition: all 0.3s ease;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
+  position: relative;
+  z-index: 1;
 }
 
 .card-title {
@@ -156,6 +161,8 @@ transition: all 0.3s ease;
    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
    display: flex;
    flex-direction: column;
+   position: relative;
+   z-index: 1;
   }
 
   .ContainerCard {
@@ -166,6 +173,8 @@ transition: all 0.3s ease;
     margin-bottom: 216px;
     flex-wrap: wrap;
     align-items: stretch;
+    position: relative;
+    z-index: 1;
   }
 
   .card-body {
@@ -323,6 +332,7 @@ input[type="date"]::placeholder {
   .Busca {
     width: 95%;                    
   }
+  
 }
 
 @media (max-width: 768px) {
@@ -331,10 +341,43 @@ input[type="date"]::placeholder {
     height: auto;
     min-height: 260px;
   }
+
+  .barra {
+    height: 56px;
+    padding: 0 15px;
+    z-index: 9999;
+  }
+  
+  body {
+    padding-top: 56px;
+  }
   
   .Busca-conteudo {
     grid-template-columns: repeat(2, 1fr);
     gap: 18px;
+  }
+
+ .ContainerCard {
+   margin-top: 80px;
+   margin-bottom: 100px;
+   gap: 30px;
+   padding: 0 15px;
+ }
+
+  .card {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .cardcontato {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .Barra-icone img {
+    width: 120px;                      
+    height: 35px;                   
   }
   
   button {
@@ -342,6 +385,11 @@ input[type="date"]::placeholder {
     margin-left: 0;
     margin-top: 15px;
     justify-self: center;
+  }
+
+  .barra a {
+    padding: 6px 12px;
+    font-size: 18px;
   }
 }
 
